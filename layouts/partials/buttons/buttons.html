@@ -1,0 +1,38 @@
+<div class="buttons">
+    <button class="back-button" onclick="window.history.back()">Назад</button>
+    <button class="back-button" onclick="window.location.href='/'">На базу</button>
+</div>
+<style>
+.buttons {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: max-content;
+}
+
+.back-button {
+    background-color: #612f9c; /* Зеленый фон */
+    color: yellow; /* Белый текст */
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.back-button:hover {
+    background-color: #612f9c;
+    transform: scale(1.05); /* Немного увеличивается */
+}
+
+.back-button:active {
+    background-color: #3f1f66;
+    transform: scale(0.95);
+}
+</style>
